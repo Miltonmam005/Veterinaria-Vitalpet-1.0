@@ -1,13 +1,49 @@
 /* aca iran todos los estilos personalizados y separados */
 
-.stiloLogoNav {
-  border-radius: 50%;
-  transition: transform 0.3s ease-in-out;
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway:ital,wght@0,100..900;1,100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
-.stiloLogoNav:hover {
+
+main {
+  flex-grow: 1;
+}
+/* color del nav */
+.colorNav {
+  background: #104510;
+  background: linear-gradient(
+    90deg,
+    rgb(2, 69, 5) 10%,
+    rgb(8, 116, 0) 100%
+  ) !important;
+}
+.color-logo-nav {
+  color: rgb(0, 0, 0) !important;
+}
+.fuenteLogo {
+  font-family: "Permanent Marker", serif;
+}
+.fuentetextos:hover {
   transform: scale(1.1);
-  box-shadow: 3px 3px 10px #4e4f4f;
+  text-shadow: #292a2a 0px 0px 10px;
 }
+
+
+/* imagen del nav */
+.logoMarca{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: inline-block;
+}
+.logoMarca:hover {
+  transform: scale(1.4);
+}
+
 
 /* logo carrito */
 .logoCarrito{

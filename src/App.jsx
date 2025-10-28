@@ -1,5 +1,4 @@
 import Menu from './components/Shared/Menu.jsx'
-import <Footer></Footer> from './components/Shared/Menu.jsx'
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.min.js";
@@ -12,7 +11,7 @@ function App() {
     <Menu></Menu>
   <h1>hola vet</h1>
 
-  <Footer></Footer>
+  
   </>
   )
 }

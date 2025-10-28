@@ -1,4 +1,3 @@
-// ...existing code...
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -7,14 +6,14 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 const Menu = () => {
   return (
     <>
-      <Navbar expand="lg" className="bg-body-tertiary">
+      <Navbar expand="lg" className="bg-body-tertiary colorNav">
         <Container>
           <Navbar.Brand href="#" className="d-flex align-items-center">
             <img
-              src="/gato-COMPRANDO.jpg"
+              src="/public/logoVet.png"
               width="40"
               height="40"
-              className="rounded-circle me-2 logoMarca"
+              className="rounded-circle me-2 logoMarca fuenteLogo color-logo-nav fuentetextos"
               style={{ objectFit: "cover" }}
               alt="Logo Vital Pet"
             />
@@ -52,4 +51,3 @@ const Menu = () => {
 };
 
 export default Menu;
-// ...existing code...

@@ -68,11 +68,11 @@ const SobreNosotros = () => {
             <div className="card shadow-sm h-100">
               <div className="card-body bg-body-secondary">
                 <Image
-                  src={benja}
+                  src={milton}
                   className="w-100 mb-2 img-circular-sobreNosotros"
-                  alt="Jose Benjamin Quiros"
+                  alt="Milton Ramón Mamani"
                 />
-                <h2>Jose Benjamin Quiros</h2>
+                <h2>Milton Ramón Mamani</h2>
                 <p className="card-text">
                   1. Página Principal: Diseño y desarrollo de la página
                   principal de la veterinaria, incluyendo la estructura y
@@ -88,12 +88,6 @@ const SobreNosotros = () => {
           <div className="col-md-4 mb-3">
             <div className="card shadow-sm h-100">
               <div className="card-body bg-body-secondary">
-                <Image
-                  src={milton}
-                  className="w-100 mb-2 img-circular-sobreNosotros"
-                  alt="Milton Ramón Mamani"
-                />
-                <h2>Milton Ramón Mamani</h2>
                 <p className="card-text">
                   1. Navbar y Footer: Diseño y desarrollo del navbar y footer
                   que se utilizarán en toda la página web.
@@ -107,12 +101,6 @@ const SobreNosotros = () => {
           <div className="col-md-4 mb-3">
             <div className="card shadow-sm h-100">
               <div className="card-body bg-body-secondary">
-                <Image
-                  src={santiago}
-                  className="w-100 mb-2 img-circular-sobreNosotros"
-                  alt="Santiago Uriel Gonzalez"
-                />
-                <h2>Santiago Uriel Gonzalez</h2>
                 <p className="card-text">
                   1. Administrar Pacientes: Desarrollo del CRUD (Crear, Leer,
                   Actualizar, Eliminar) de pacientes, incluyendo la gestión de
@@ -127,12 +115,6 @@ const SobreNosotros = () => {
           <div className="col-md-4 mb-3">
             <div className="card shadow-sm h-100">
               <div className="card-body bg-body-secondary">
-                <Image
-                  src={celina}
-                  className="w-100 mb-2 img-circular-sobreNosotros"
-                  alt="Celina Gabriela Acosta"
-                />
-                <h2>Celina Gabriela Acosta</h2>
                 <p className="card-text">
                   1. Login y Registro de Usuarios: Desarrollo del sistema de
                   login y registro de usuarios, incluyendo la validación de
@@ -147,12 +129,6 @@ const SobreNosotros = () => {
           <div className="col-md-4 mb-3">
             <div className="card shadow-sm h-100">
               <div className="card-body bg-body-secondary">
-                <Image
-                  src="https://w7.pngwing.com/pngs/753/432/png-transparent-user-profile-2018-in-sight-user-conference-expo-business-default-business-angle-service-people-thumbnail.png"
-                  className="w-100 mb-2 img-circular-sobreNosotros"
-                  alt="Tobias Conde"
-                />
-                <h2>Tobias Conde</h2>
                 <p className="card-text">
                   1. Página Principal del Administrador: Diseño y desarrollo de
                   la página principal del administrador, incluyendo el dashboard

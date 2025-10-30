@@ -159,3 +159,10 @@ main {
 
 /* ----Sobre Nosotros ----- */
 
+.img-circular-sobreNosotros {
+  width: 100%; /* ocupa todo el ancho del contenedor */
+  aspect-ratio: 1/1; /* asegura que alto = ancho → cuadrado */
+  border-radius: 50%; /* convierte el cuadrado en círculo */
+  object-fit: cover; /* recorta la imagen para que no se deforme */
+  /* clases para el footer */
+}

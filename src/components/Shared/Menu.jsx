@@ -26,7 +26,9 @@ const Menu = () => {
               <Nav.Link href="/">Inicio</Nav.Link>
               <Nav.Link href="#">Logiuon</Nav.Link>
               <NavDropdown title="Turnos" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Turnos disponibles</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">
+                  Turnos disponibles
+                </NavDropdown.Item>
                 <NavDropdown.Item href="#">turno mañana</NavDropdown.Item>
                 <NavDropdown.Item href="#">turno tarde</NavDropdown.Item>
                 <NavDropdown.Divider />

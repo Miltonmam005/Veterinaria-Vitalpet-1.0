@@ -74,3 +74,85 @@ main {
 .textocolor {
   color: white;
 }
+
+/* ---Inicio--- */
+
+.hero {
+  min-height: 400px; /* altura mínima */
+  display: flex;
+  align-items: center; /* centra verticalmente */
+}
+
+.hero-img {
+  max-height: 300px; /* límite de alto */
+  object-fit: cover;
+  border-radius: 10px;
+}
+.iconosIndex {
+  width: 50px;
+  height: 50px;
+}
+.Titulosinicio {
+  font-family: "Oswald", sans-serif;
+}
+.TitulosinicioTamaño {
+  font-size: 100px;
+  font-weight: bold;
+}
+.iconosServicio {
+  font-size: 80px;
+}
+.intercaloverde {
+  background-color: #4c7255;
+}
+.intercaloclaro {
+  background-color: #fff8d8ff;
+}
+.cardservicioverde {
+  background-color: #30572aff;
+}
+.cardservicioamarillo {
+  background-color: #ddbb5cff;
+}
+.radius {
+  border-radius: 5px;
+}
+.imgCardIndex {
+  height: 210px;
+  object-fit: cover;
+}
+.cardservicioamarillo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cardservicioamarillo .card-body {
+  flex-grow: 1;
+}
+
+.imgCardIndex {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.card-plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.card-prof:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.imagenProfesional {
+  object-fit: cover;
+}
+.cardsgradienteverde {
+  background: linear-gradient(135deg, #198754, #20c997);
+  color: #ffffffff;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card-test:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}

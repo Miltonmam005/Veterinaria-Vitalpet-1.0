@@ -1,5 +1,4 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -11,13 +10,13 @@ import Inicio from "./components/Inicio.jsx";
 import SobreNosotros from "./components/pages/SobreNosotros.jsx";
 import Login from "./components/pages/Login.jsx";
 import Register from "./components/pages/Register.jsx";
-import Contact from "./components/pages/Contact.jsx";
+import Contacto from "./components/pages/Contacto.jsx";
 import Error404 from "./components/pages/Error404.jsx";
 import Administrador from "./components/pages/Administrador.jsx";
-import AdministrarPacientes from "./components/pages/administrarPacientes.jsx";
-import AdministrarTurnos from "./components/pages/administrarTurnos.jsx";
+import AdministrarPacientes from "./components/pages/AdminPacientes.jsx";
+import AdministrarTurnos from "./components/pages/Administrador.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
-import DetalleProductos from "./components/pages/DetalleProductos.jsx";
+import DetalleProductos from "./components/pages/DetalleProducto.jsx";
 import ProtectorAdmin from "./components/routes/protectorAdmin.jsx";
 import "./index.css";
 
@@ -48,7 +47,7 @@ function App() {
           element={<Login setUsuarioAdmin={setUsuarioAdmin} />}
         />
         <Route path="/registro" element={<Register />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contacto />} />
 
         <Route
           path="/administrador"

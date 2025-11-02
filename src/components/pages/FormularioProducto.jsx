@@ -3,7 +3,61 @@ import { Button, Form, Container, Row, Col, Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate, useParams } from "react-router";
 import Swal from "sweetalert2";
+const FormularioProducto = ({
+  titulo,
+  crearProducto,
+  buscarProducto,
+  editarProducto,
+}) => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+    setValue,
+  } = useForm();
 
+  const { id } = useParams();
+  const navegacion = useNavigate();
+
+  useEffect(() => {
+    if (titulo === "Editar Producto") {
+      const productoBuscado = buscarProducto(id);
+      if (productoBuscado) {
+        setValue("title", productoBuscado.title);
+        setValue("price", productoBuscado.price);
+        setValue("category", productoBuscado.category);
+        setValue("type", productoBuscado.type);
+        setValue("image", productoBuscado.image);
+        setValue("alt", productoBuscado.alt);
+        setValue("description_breve", productoBuscado.description_breve);
+        setValue("description_amplia", productoBuscado.description_amplia);
+        setValue("destacada", productoBuscado.destacada || false);
+      }
+    }
+  }, [titulo, id, buscarProducto, setValue]);
+
+  const onSubmit = (producto) => {
+    if (titulo === "Agregar Producto") {
+      if (crearProducto(producto)) {
+        Swal.fire({
+          title: "Producto creado",
+          text: `El producto ${producto.title} fue creado correctamente.`,
+          icon: "success",
+        });
+        reset();
+      }
+    } else {
+      if (editarProducto(id, producto)) {
+        Swal.fire({
+          title: "Producto editado",
+          text: `El producto ${producto.title} fue editado correctamente.`,
+          icon: "success",
+        });
+      }
+      navegacion("/administrador");
+    }
+  };
 
 return (
     <Container className="my-5">

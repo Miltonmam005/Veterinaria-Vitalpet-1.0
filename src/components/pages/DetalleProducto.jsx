@@ -25,7 +25,7 @@ const DetalleProductos = ({ buscarProductos }) => {
       </Container>
     );
   }
-   return (
+  return (
     <Container className="my-3">
       <Link
         className="text-decoration-none text-success-emphasis"
@@ -81,15 +81,9 @@ const DetalleProductos = ({ buscarProductos }) => {
               <div className="mt-auto">
                 <div className="mb-3">
                   <small className="text-muted">
-          
-          
-          
                     <i className="bi bi-info-circle me-1"></i>
                     {producto.description_breve ||
-         
-         
-         
-         "Producto de calidad para tu mascota"}
+                      "Producto de calidad para tu mascota"}
                   </small>
                 </div>
 
@@ -97,17 +91,13 @@ const DetalleProductos = ({ buscarProductos }) => {
                   variant="success"
                   size="lg"
                   className="w-100"
-         
-         
                   onClick={() => {
                     /* Aquí puedes agregar la lógica de compra */
                   }}
                 >
                   <i className="bi bi-cart-plus me-2"></i>
                   Agregar al Carrito
-          
-          
-                 </Button>
+                </Button>
               </div>
             </Card.Body>
           </Col>

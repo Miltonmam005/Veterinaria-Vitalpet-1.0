@@ -31,7 +31,7 @@ const ItemProducto = ({ producto, fila, borrarProducto, destacarProducto }) => {
       }
     });
   };
- return (
+  return (
     <tr>
       <td className="text-center">{fila}</td>
       <td>{producto.title}</td>
@@ -46,3 +46,28 @@ const ItemProducto = ({ producto, fila, borrarProducto, destacarProducto }) => {
           >
             <i className="bi bi-pencil-square"></i>
           </Link>
+          <Button
+            variant="danger"
+            onClick={eliminarProducto}
+            className="me-lg-2"
+          >
+            <i className="bi bi-trash"></i>
+          </Button>
+          <Button
+            variant="outline-success"
+            onClick={() => destacarProducto(producto.id)}
+            className="border-0"
+          >
+            {producto.destacada ? (
+              <i className="bi bi-star-fill fs-5 text-warning"></i>
+            ) : (
+              <i className="bi bi-star fs-5 text-secondary"></i>
+            )}
+          </Button>
+        </div>
+      </td>
+    </tr>
+  );
+};
+
+export default ItemProducto;

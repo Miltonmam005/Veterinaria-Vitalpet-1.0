@@ -1,0 +1,8 @@
+/* Error 404  todos los estilos */
+.errorImg {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px; /* Un tamaño fijo se ve mejor en todas las pantallas */
+  width: 50%; /* Asegura que no se desborde en pantallas pequeñas */
+  /* height: 90%; */
+}

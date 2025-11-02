@@ -6,6 +6,43 @@ import { Link, useNavigate } from 'react-router';
 import { login } from "../../helpers/queries";
 
 
+const Login = ({ setUsuarioAdmin, setestadoAdmin }) => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+
+  const navegacion = useNavigate();
+
+  const iniciarSesion = async (usuario) => {
+    try {
+      const respuesta = await login(usuario);
+      if (respuesta.status === 200) {
+        const datosUsuario = await respuesta.json();
+        setUsuarioAdmin({
+          nombreUsuario: datosUsuario.nombreUsuario,
+          token: datosUsuario.token,
+        });
+        Swal.fire(
+          "Bienvenido",
+          `Hola ${datosUsuario.nombreUsuario}`,
+          "success"
+        );
+        navegacion("/administrador");
+      } else {
+        Swal.fire({
+          title: "Error al iniciar sesion",
+          text: `Credenciales incorrectas`,
+          icon: "error",
+        });
+      }
+    } catch (error) {
+      console.error("Error en login:", error);
+      Swal.fire("Error", "Ocurrió un error inesperado", "error");
+    }
+  };
+
  return (
     <div className="login-wrapper">
       <Container fluid className="login-container">

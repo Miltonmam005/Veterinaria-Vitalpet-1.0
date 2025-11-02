@@ -166,3 +166,107 @@ main {
   object-fit: cover; /* recorta la imagen para que no se deforme */
   /* clases para el footer */
 }
+/* iconos foter */
+.footerIcon {
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease !important;
+}
+
+.footerIcon:hover {
+  color: #03fcd2 !important;
+  transform: translateY(-3px);
+}
+.colorFooter {
+  background-color: #002400;
+}
+/* Error 404  todos los estilos */
+.errorImg {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 50%;
+}
+/* Formulariocards */
+.formulario-plan-bg {
+  background: linear-gradient(135deg, #142917ff, #2d7c5bff, #2d6a4f),
+    radial-gradient(
+      circle at top left,
+      rgba(45, 106, 79, 0.6) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(27, 67, 50, 0.6) 0%,
+      transparent 60%
+    );
+  background-blend-mode: overlay;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+}
+
+.formulario-card {
+  background-color: hsla(59, 100%, 89%, 1);
+  border: 2px solid #c9a227;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  color: #1b4332;
+}
+
+.formulario-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #c9a227, #1b4332);
+}
+
+.formulario-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
+}
+.text-dorado {
+  color: #d4af37 !important;
+}
+.text-verde {
+  color: #1b4332 !important;
+}
+.form-control {
+  border: 1.5px solid #b5b5b5;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: #2d6a4f;
+  box-shadow: 0 0 8px rgba(45, 106, 79, 0.4);
+}
+.btn-verde {
+  background-color: #1b4332;
+  color: #fff;
+  border: 2px solid #c9a227;
+  transition: all 0.3s ease;
+}
+
+.btn-verde:hover {
+  background-color: #2d6a4f;
+  color: #f1c40f;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+.icono-circular {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #d4af37, #b8860b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 0 10px rgba(201, 162, 39, 0.6);
+}

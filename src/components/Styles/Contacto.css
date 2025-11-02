@@ -1,0 +1,126 @@
+.contact-page {
+  background-color: #f8faf9;
+  padding: 60px 0;
+  font-family: "Poppins", sans-serif;
+  color: #2b2b2b;
+}
+
+.contact-container {
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  max-width: 1100px;
+}
+
+.contact-info {
+  background: linear-gradient(160deg, #2f7a4b, #66b984);
+  color: #fff;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info h2 {
+  font-weight: 700;
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+.contact-info .subtitle {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.info-section h4 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.info-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #fcdc83;
+  transition: all 0.3s ease;
+}
+
+.info-list strong {
+  font-size: 0.95rem;
+}
+
+.info-list p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.contact-form {
+  padding: 30px 50px;
+  background-color: #fff;
+}
+
+.contact-form h4 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2f7a4b;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #66b984;
+  box-shadow: 0 0 0 0.2rem rgba(102, 185, 132, 0.25);
+}
+
+.submit-btn {
+  background-color: #ffb74d;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 25px;
+  width: 140px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ffa726;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 0 0 20px 20px;
+}

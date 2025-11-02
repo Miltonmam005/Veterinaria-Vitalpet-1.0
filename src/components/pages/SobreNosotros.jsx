@@ -1,5 +1,4 @@
-import React from 'react';
-import milton from "../assets/milton.jpg";
+import milton from "../../assets/milton.jpeg";
 
 const SobreNosotros = () => {
     return (

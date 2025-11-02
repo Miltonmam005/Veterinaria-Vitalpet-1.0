@@ -87,7 +87,7 @@ function App() {
         <Route path="/administrar-turnos" element={<AdministrarTurnos />} />
         <Route path="/detalle-producto/:id" element={<DetalleProductos />} />
         <Route
-          path="/formularioplan"
+          path="/FormularioPlan"
           element={<FormularioPlan></FormularioPlan>}
         ></Route>
         <Route path="*" element={<Error404 />} />

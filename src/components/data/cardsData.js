@@ -11,7 +11,8 @@ export const cardsData = [
     alt: "Juguete de goma con forma de hueso para perro",
     type: "Producto",
     destacada: true,
-  },{
+  },
+  {
     id: 2,
     title: "Comedero anti-voracidad",
     image:
@@ -22,7 +23,8 @@ export const cardsData = [
     alt: "Comedero de plástico azul con diseños internos que forman un laberinto",
     type: "Producto",
     destacada: false,
-  }, {
+  },
+  {
     id: 3,
     title: "Arena aglomerante para gatos",
     image:
@@ -34,7 +36,7 @@ export const cardsData = [
     type: "Producto",
     destacada: true,
   },
-   {
+  {
     id: 4,
     title: "Transportadora para mascotas",
     image:
@@ -57,7 +59,8 @@ export const cardsData = [
     alt: "Botella de shampoo con etiqueta azul que dice 'Hipoalergénico'",
     type: "Producto",
     destacada: true,
-  },{
+  },
+  {
     id: 6,
     title: "Cepillo para pelo largo",
     image:
@@ -141,3 +144,40 @@ export const cardsData = [
     type: "Producto",
     destacada: false,
   },
+  {
+    id: 13,
+    title: "Chaleco salvavidas para perro",
+    image: "https://i.ebayimg.com/images/g/gAkAAOSwvsBkmcws/s-l1600.webp",
+    description_breve: "Chaleco con flotación para paseos en barco o playa.",
+    description_amplia:
+      "Fabricado con material neopreno y correas reflectantes, este chaleco asegura la flotación de tu perro en el agua. Incluye un asa en la espalda para ayudarlo a salir del agua fácilmente.",
+    alt: "Chaleco salvavidas de color naranja brillante para perro",
+    type: "Producto",
+    destacada: false,
+  },
+  {
+    id: 14,
+    title: "Botiquín de primeros auxilios",
+    image:
+      "https://img.freepik.com/fotos-premium/foto-botiquin-primeros-auxilios-mascotas-vendajes-medicamentos_933496-48199.jpg?w=2000",
+    description_breve: "Kit básico para emergencias con tu mascota.",
+    description_amplia:
+      "Incluye vendas, gasas, antiséptico, pinzas, tijeras de punta redonda y una guía básica de primeros auxilios. Imprescindible para excursionistas o para tener en casa por cualquier imprevisto.",
+    alt: "Botiquín rojo compacto con cremallera y cruz blanca",
+    type: "Producto",
+    destacada: false,
+  },
+  {
+    id: 15,
+    title: "Collares para cachorros",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_758861-MLA92716290699_092025-F.webp",
+    description_breve:
+      "Collares ajustables para cachorros de todos los tamaños.",
+    description_amplia:
+      "Set de collares coloridos y ajustables, perfectos para cachorros en crecimiento. Fabricados con materiales suaves y seguros, incluyen hebilla de liberación rápida para mayor seguridad de tu mascota.",
+    alt: "Diferentes collares para cachorros de colores variados",
+    type: "Producto",
+    destacada: true,
+  },
+];

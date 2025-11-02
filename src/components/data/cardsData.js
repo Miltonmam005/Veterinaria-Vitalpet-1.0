@@ -34,3 +34,27 @@ export const cardsData = [
     type: "Producto",
     destacada: true,
   },
+   {
+    id: 4,
+    title: "Transportadora para mascotas",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_775439-MLA85127379365_052025-F.webp",
+    description_breve: "Transportadora segura y ventilada para viajes.",
+    description_amplia:
+      "Ideal para visitas al veterinario o viajes. Esta transportadora cuenta con ventilación en 4 lados, puerta de metal segura y un diseño robusto. Incluye un fondo de plástico removible para una fácil limpieza.",
+    alt: "Transportadora de plástico gris con puerta de rejas metálicas",
+    type: "Producto",
+    destacada: false,
+  },
+  {
+    id: 5,
+    title: "Shampoo hipoalergénico",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_748518-MLA83582334283_042025-F.webp",
+    description_breve: "Shampoo suave para mascotas con piel sensible.",
+    description_amplia:
+      "Formulado con ingredientes naturales como la avena, este shampoo limpia en profundidad sin irritar la piel. Libre de fragancias artificiales y parabenos, es perfecto para perros y gatos con alergias o piel delicada.",
+    alt: "Botella de shampoo con etiqueta azul que dice 'Hipoalergénico'",
+    type: "Producto",
+    destacada: true,
+  },

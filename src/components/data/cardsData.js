@@ -117,3 +117,27 @@ export const cardsData = [
     type: "Producto",
     destacada: false,
   },
+  {
+    id: 11,
+    title: "Fuente de agua para gatos",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_649182-MLA91948284199_092025-F.webp",
+    description_breve: "Fuente con flujo continuo que incentiva a beber.",
+    description_amplia:
+      "El agua en movimiento atrae a los gatos, promoviendo una mejor hidratación. Esta fuente tiene un filtro integrado que purifica el agua, es silenciosa y muy fácil de desmontar y limpiar.",
+    alt: "Fuente de agua de plástico blanco con flujo circular",
+    type: "Producto",
+    destacada: true,
+  },
+  {
+    id: 12,
+    title: "Juguete interactivo para gato",
+    image: "https://i.ebayimg.com/images/g/ne8AAOSwSvJoLegf/s-l1600.webp",
+    description_breve:
+      "Juguete con túneles y pelotas para estimulación mental.",
+    description_amplia:
+      "Mantén a tu gato activo y entretenido con este circuito que incluye túneles y bolas que ruedan. Estimula su instinto de caza y ayuda a prevenir el aburrimiento.",
+    alt: "Base circular de felpa con túneles y una pelota en el interior",
+    type: "Producto",
+    destacada: false,
+  },

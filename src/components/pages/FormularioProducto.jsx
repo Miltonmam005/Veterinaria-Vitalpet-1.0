@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { Link, useNavigate, useParams } from "react-router";
 import Swal from "sweetalert2";
 
-
 const FormularioProducto = ({
   titulo,
   crearProducto,
@@ -21,15 +20,11 @@ const FormularioProducto = ({
 
   const { id } = useParams();
 
-
   const navegacion = useNavigate();
 
   useEffect(() => {
     if (titulo === "Editar Producto") {
-
-
-
-        const productoBuscado = buscarProducto(id);
+      const productoBuscado = buscarProducto(id);
       if (productoBuscado) {
         setValue("title", productoBuscado.title);
         setValue("price", productoBuscado.price);
@@ -55,9 +50,7 @@ const FormularioProducto = ({
         reset();
       }
     } else {
-
-
-        if (editarProducto(id, producto)) {
+      if (editarProducto(id, producto)) {
         Swal.fire({
           title: "Producto editado",
           text: `El producto ${producto.title} fue editado correctamente.`,

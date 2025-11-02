@@ -26,17 +26,12 @@ function FormularioPlan() {
     });
   };
 
-
-
   return (
     <div className="formulario-plan-bg py-5">
       <div className="container d-flex justify-content-center align-items-center">
         <div className="card formulario-card shadow-lg p-4 rounded-5 col-12 col-md-8 col-lg-6">
           <div className="text-center mb-4">
             <div className="icono-circular mb-3">
-
-
-
               <i className="bi bi-heart-pulse fs-2 text-light"></i>
             </div>
             <h2 className="fw-bold text-verde mt-2">
@@ -47,8 +42,6 @@ function FormularioPlan() {
               Completá tus datos para cuidar mejor a tu mascota
             </p>
           </div>
-
-
 
           {/* FORMULARIO */}
           <form onSubmit={handleSubmit(onSubmitForm)}>
@@ -66,8 +59,6 @@ function FormularioPlan() {
                     minLength: {
                       value: 3,
                       message: "Debe tener al menos 3 caracteres",
-
-
                     },
                     maxLength: {
                       value: 30,
@@ -84,7 +75,6 @@ function FormularioPlan() {
                 <label className="form-label fw-semibold">
                   Correo electrónico
                 </label>
-
 
                 <input
                   type="email"
@@ -111,7 +101,6 @@ function FormularioPlan() {
                   type="tel"
                   className="form-control rounded-pill shadow-sm"
                   placeholder="Ej: +54 9 351 1234567"
-
                   {...register("telefono", {
                     required: "El teléfono es obligatorio",
                     pattern: {
@@ -121,17 +110,12 @@ function FormularioPlan() {
                   })}
                 />
                 {errors.telefono && (
-
-
-
-
-<p className="text-danger small">{errors.telefono.message}</p>
+                  <p className="text-danger small">{errors.telefono.message}</p>
                 )}
               </div>
 
               <div className="col-md-6 mb-3">
                 <label className="form-label fw-semibold">
-
                   Nombre de la mascota
                 </label>
                 <input
@@ -178,9 +162,6 @@ function FormularioPlan() {
                 </p>
               )}
             </div>
-
-
-
 
             <button
               type="submit"

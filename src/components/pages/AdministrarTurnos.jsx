@@ -4,13 +4,12 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
-
 const AdministrarTurnos = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-return (
+  return (
     <>
       <section className="container">
         <div className="d-flex justify-content-between align-items-center mt-5">
@@ -39,20 +38,17 @@ return (
                 <td>Juan Gutierrez</td>
                 <td>Laura Torres</td>
                 <td>Alonso</td>
-             
-             
+
                 <td>Gripe</td>
                 <td>15/10/25</td>
                 <td>17:30</td>
                 <td>
                   <div className="d-flex justify-content-center gap-1">
                     <button className="btn btn-warning">
-                      <i className="bi bi-pencil-square"></i> 
+                      <i className="bi bi-pencil-square"></i>
                     </button>
                     <button className="btn btn-danger">
-             
-             
-                      <i className="bi bi-trash"></i> 
+                      <i className="bi bi-trash"></i>
                     </button>
                   </div>
                 </td>
@@ -95,7 +91,7 @@ return (
               />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formSintomas">
-              <Form.Label>Síntomas</Form.Label> 
+              <Form.Label>Síntomas</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="diarrea"
@@ -105,17 +101,11 @@ return (
             </Form.Group>
             <Form.Group className="mb-3" controlId="formFecha">
               <Form.Label>Fecha</Form.Label>
-              <Form.Control
-                type="date"
-                required
-              />
+              <Form.Control type="date" required />
             </Form.Group>
             <Form.Group className="mb-3" controlId="formHora">
-              <Form.Label>Hora</Form.Label> 
-              <Form.Control
-                type="time" 
-                required
-              />
+              <Form.Label>Hora</Form.Label>
+              <Form.Control type="time" required />
             </Form.Group>
           </Form>
         </Modal.Body>

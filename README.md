@@ -172,13 +172,13 @@ Frontend (Netlify/Vercel)
 ## 📞 Contacto y Soporte
 Email: [miltin.mamani@gmail.com]
 
-Trello: []
+Trello: [https://tree.taiga.io/project/mil005-vitalpet10/timeline]
 
-GitHub: [https://github.com/Miltonmam005/Vitalpet-veterinaria]
+GitHub: [https://github.com/Miltonmam005/Veterinaria-Vitalpet-1.0.git]
 
 ## 🛠️ Scripts Disponibles
 Backend
 
 ## 📄 Licencia
-Este proyecto es desarrollado con fines educativos.
+Este proyecto es desarrollado con fines educativos./ venta
 

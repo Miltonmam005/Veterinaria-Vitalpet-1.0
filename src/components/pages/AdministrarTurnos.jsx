@@ -5,6 +5,11 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 
 
+const AdministrarTurnos = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
 return (
     <>
       <section className="container">
@@ -34,6 +39,8 @@ return (
                 <td>Juan Gutierrez</td>
                 <td>Laura Torres</td>
                 <td>Alonso</td>
+             
+             
                 <td>Gripe</td>
                 <td>15/10/25</td>
                 <td>17:30</td>
@@ -43,6 +50,8 @@ return (
                       <i className="bi bi-pencil-square"></i> 
                     </button>
                     <button className="btn btn-danger">
+             
+             
                       <i className="bi bi-trash"></i> 
                     </button>
                   </div>

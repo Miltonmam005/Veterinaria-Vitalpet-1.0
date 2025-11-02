@@ -22,4 +22,15 @@ export const cardsData = [
     alt: "Comedero de plástico azul con diseños internos que forman un laberinto",
     type: "Producto",
     destacada: false,
+  }, {
+    id: 3,
+    title: "Arena aglomerante para gatos",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_797451-MLA94468770849_102025-F.webp",
+    description_breve: "Arena higiénica que facilita la limpieza del arenero.",
+    description_amplia:
+      "Arena de arcilla natural que forma grumos sólidos y compactos al contacto con la humedad, permitiendo una limpieza rápida y eficaz. Controla los olores y es suave para las patas de tu felino.",
+    alt: "Bolsa de arena para gatos de color blanco y gris",
+    type: "Producto",
+    destacada: true,
   },

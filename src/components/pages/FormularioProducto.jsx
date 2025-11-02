@@ -3,6 +3,8 @@ import { Button, Form, Container, Row, Col, Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { Link, useNavigate, useParams } from "react-router";
 import Swal from "sweetalert2";
+
+
 const FormularioProducto = ({
   titulo,
   crearProducto,
@@ -18,11 +20,16 @@ const FormularioProducto = ({
   } = useForm();
 
   const { id } = useParams();
+
+
   const navegacion = useNavigate();
 
   useEffect(() => {
     if (titulo === "Editar Producto") {
-      const productoBuscado = buscarProducto(id);
+
+
+
+        const productoBuscado = buscarProducto(id);
       if (productoBuscado) {
         setValue("title", productoBuscado.title);
         setValue("price", productoBuscado.price);
@@ -48,7 +55,9 @@ const FormularioProducto = ({
         reset();
       }
     } else {
-      if (editarProducto(id, producto)) {
+
+
+        if (editarProducto(id, producto)) {
         Swal.fire({
           title: "Producto editado",
           text: `El producto ${producto.title} fue editado correctamente.`,
@@ -59,7 +68,7 @@ const FormularioProducto = ({
     }
   };
 
-return (
+  return (
     <Container className="my-5">
       <Row className="justify-content-center">
         <Col md={10}>
@@ -69,8 +78,6 @@ return (
                 titulo === "Agregar Producto" ? "bg-success" : "bg-warning"
               } text-white`}
             >
-
-
               <h1 className="mb-0">{titulo}</h1>
             </Card.Header>
             <Card.Body>
@@ -102,8 +109,6 @@ return (
                     </Form.Group>
                   </Col>
 
-
-
                   <Col md={6}>
                     <Form.Group className="mb-3">
                       <Form.Label>Precio *</Form.Label>
@@ -128,9 +133,6 @@ return (
 
                 <Row>
                   <Col md={6}>
-
-
-
                     <Form.Group className="mb-3">
                       <Form.Label>Categoría *</Form.Label>
                       <Form.Select
@@ -156,9 +158,6 @@ return (
 
                   <Col md={6}>
                     <Form.Group className="mb-3">
-
-
-
                       <Form.Label>Tipo *</Form.Label>
                       <Form.Select
                         {...register("type", {
@@ -171,9 +170,6 @@ return (
                       </Form.Select>
                       <Form.Text className="text-danger">
                         {errors.type?.message}
-
-
-
                       </Form.Text>
                     </Form.Group>
                   </Col>
@@ -195,8 +191,6 @@ return (
                   />
                   <Form.Text className="text-danger">
                     {errors.image?.message}
-
-
                   </Form.Text>
                 </Form.Group>
 

@@ -41,25 +41,6 @@ const Contact = () => {
     }
   };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
   return (
     <div className="contact-page">
       <Container className="contact-container">

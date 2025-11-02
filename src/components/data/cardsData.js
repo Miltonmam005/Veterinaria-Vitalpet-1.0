@@ -81,3 +81,39 @@ export const cardsData = [
     type: "Producto",
     destacada: false,
   },
+  {
+    id: 8,
+    title: "Rascador para gatos",
+    image:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_771638-MLA93644957816_102025-F.webp",
+    description_breve: "Poste rascador para que tu gato afile sus uñas.",
+    description_amplia:
+      "Fabricado con sisal natural, este rascador alto y estable permite a tu gato estirarse y afilar sus uñas de manera natural, protegiendo tus muebles. Incluye una plataforma superior para descansar.",
+    alt: "Poste rascador alto forrado en cuerda beige con una plataforma en la parte superior",
+    type: "Producto",
+    destacada: true,
+  },
+  {
+    id: 9,
+    title: "Cama ortopédica para perro",
+    image:
+      "https://superpapa.cl/wp-content/uploads/2020/06/pet-4-agIMG_4961-scaled.jpg",
+    description_breve: "Cama con soporte ergonómico para articulaciones.",
+    description_amplia:
+      "Rellena de espada memory foam, esta cama alivia la presión en las articulaciones y la columna, ideal para perros mayores o con problemas de movilidad. La funda es lavable y resistente.",
+    alt: "Cama cuadrada de tela gris, de aspecto mullido",
+    type: "Producto",
+    destacada: false,
+  },
+  {
+    id: 10,
+    title: "Correa retráctil",
+    image:
+      "https://de2kqc9pq55cj.cloudfront.net/fit-in/600x600/filters:fill(FFFFFF):quality(90):format(webp)/_img_productos/correa-retractil-5mts-xs528-5m-celeste-foto1.jpg",
+    description_breve: "Correa de 5 metros que se bloquea a tu ritmo.",
+    description_amplia:
+      "Dale a tu perro libertad controlada durante los paseos. Esta correa retráctil tiene un mecanismo suave que se bloquea en cualquier longitud, un agarre ergonómico y una cinta resistente.",
+    alt: "Correa retráctil negra con mango y mecanismo en el centro",
+    type: "Producto",
+    destacada: false,
+  },

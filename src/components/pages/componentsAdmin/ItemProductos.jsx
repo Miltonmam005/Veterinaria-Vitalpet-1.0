@@ -31,3 +31,18 @@ const ItemProducto = ({ producto, fila, borrarProducto, destacarProducto }) => {
       }
     });
   };
+ return (
+    <tr>
+      <td className="text-center">{fila}</td>
+      <td>{producto.title}</td>
+      <td className="text-center">{producto.type}</td>
+      <td className="text-center">{producto.price || "N/A"}</td>
+      <td>{producto.category || producto.genre || "Sin categoría"}</td>
+      <td className="text-center">
+        <div className="d-flex gap-1 justify-content-center">
+          <Link
+            to={`/administrador/editar/${producto.id}`}
+            className="btn btn-warning me-lg-2"
+          >
+            <i className="bi bi-pencil-square"></i>
+          </Link>

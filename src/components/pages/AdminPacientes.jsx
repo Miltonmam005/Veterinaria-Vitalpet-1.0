@@ -2,7 +2,13 @@ import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
- return (
+ 
+const AdministrarPacientes = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+return (
     <>
       <section className="container">
         <div className="d-flex justify-content-between align-items-center mt-5">
@@ -15,6 +21,9 @@ import Form from "react-bootstrap/Form";
         </div>
         <div className="my-4 table-responsive">
           <table className="table table-striped table-bordered table-hover">
+ 
+ 
+ 
             <thead>
               <tr className="text-center">
                 <th>Nombre y Apellido</th>
@@ -36,6 +45,8 @@ import Form from "react-bootstrap/Form";
                 <td>Alonso</td>
                 <td>Perro</td>
                 <td>Saluki</td>
+    
+    
                 <td>
                   <div className="d-flex justify-content-center gap-1">
                     <button className="btn btn-warning">

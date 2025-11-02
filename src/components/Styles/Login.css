@@ -96,3 +96,28 @@
 .login-links a:hover {
   text-decoration: underline;
 }
+
+@media (max-width: 900px) {
+  .login-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-side {
+    padding: 1.5rem;
+  }
+
+  .login-icono {
+    width: 350px;
+  }
+
+  .right-side {
+    padding: 2.5rem 2rem;
+    width: 100%;
+  }
+
+  .login-title,
+  .login-links {
+    text-align: center;
+  }
+}

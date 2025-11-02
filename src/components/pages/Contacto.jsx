@@ -7,39 +7,58 @@ import { enviarMensaje } from "../../helpers/queries";
 import Swal from "sweetalert2";
 
 const Contact = () => {
-//   const {
-//     register,
-//     handleSubmit,
-//     formState: { errors },
-//     reset,
-//   } = useForm();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm();
 
-//   const onSubmit = async (data) => {
-//     try {
-//       const respuesta = await enviarMensaje(data);
-//       if (respuesta && respuesta.ok) {
-//         Swal.fire({
-//           title: "¡Mensaje enviado!",
-//           text: "Tu mensaje se envió correctamente 🐾",
-//           icon: "success",
-//         });
-//         reset();
-//       } else {
-//         Swal.fire({
-//           title: "Error",
-//           text: "No se pudo enviar tu mensaje. Intenta nuevamente.",
-//           icon: "error",
-//         });
-//       }
-//     } catch (error) {
-//       console.error(error);
-//       Swal.fire({
-//         title: "Error",
-//         text: "No se pudo enviar tu mensaje. Intenta nuevamente.",
-//         icon: "error",
-//       });
-//     }
-//   };
+  const onSubmit = async (data) => {
+    try {
+      const respuesta = await enviarMensaje(data);
+      if (respuesta && respuesta.ok) {
+        Swal.fire({
+          title: "¡Mensaje enviado!",
+          text: "Tu mensaje se envió correctamente 🐾",
+          icon: "success",
+        });
+        reset();
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo enviar tu mensaje. Intenta nuevamente.",
+          icon: "error",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      Swal.fire({
+        title: "Error",
+        text: "No se pudo enviar tu mensaje. Intenta nuevamente.",
+        icon: "error",
+      });
+    }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
 
   return (
     <div className="contact-page">

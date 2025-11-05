@@ -16,8 +16,8 @@ import Administrador from "./components/pages/Administrador.jsx";
 import AdministrarPacientes from "./components/pages/AdminPacientes.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
 import DetalleProductos from "./components/pages/DetalleProducto.jsx";
-import ProtectorAdmin from "./components/routes/protectorAdmin.jsx";
-import FormularioPlan from "./components/pages/FormularioPlan.jsx"; 
+import ProtectorAdmin from "./components/routes/ProtectorAdmin.jsx";
+import FormularioPlan from "./components/pages/FormularioPlan.jsx";
 import "./index.css";
 
 function App() {
@@ -46,6 +46,8 @@ function App() {
           path="/login"
           element={<Login setUsuarioAdmin={setUsuarioAdmin} />}
         />
+        <Route path="/catalogo" element={<Catalogo />} />
+        <Route path="/turnos" element={<Turnos />} />
         <Route path="/registro" element={<Register />} />
         <Route path="/contact" element={<Contacto />} />
 
@@ -62,7 +64,11 @@ function App() {
           path="/administrador/crear"
           element={
             <ProtectorAdmin usuarioAdmin={usuarioAdmin}>
-              <FormularioProducto titulo="Agregar Producto" />
+              <FormularioProducto
+                titulo="Agregar Producto"
+                productos={productos}
+                setProductos={setProductos}
+              />
             </ProtectorAdmin>
           }
         />

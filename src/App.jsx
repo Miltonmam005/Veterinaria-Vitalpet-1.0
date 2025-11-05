@@ -46,8 +46,8 @@ function App() {
           path="/login"
           element={<Login setUsuarioAdmin={setUsuarioAdmin} />}
         />
-        <Route path="/catalogo" element={<Catalogo />} />
-        <Route path="/turnos" element={<Turnos />} />
+        <Route path="/ItemProducto" element={<Catalogo />} />
+        <Route path="/AdministrarTurnos" element={<Turnos />} />
         <Route path="/registro" element={<Register />} />
         <Route path="/contact" element={<Contacto />} />
 

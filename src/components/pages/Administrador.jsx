@@ -1,10 +1,10 @@
 import { Accordion, Table, Button, Form, Modal, Spinner } from "react-bootstrap";
-import ItemProducto from "./componentsAdministrador/ItemProducto";
+import ItemProducto from "./componentsAdministrador/ItemProductos.jsx";
 import { useState, useEffect, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { leerProductosPaginados, crearProducto } from "../../helpers/queries.js";
 import Swal from "sweetalert2";
-import "..Styles/Administrador.css";
+import "../Styles/Administrador.css";
 
 const Administrador = ({ 
   productos, 

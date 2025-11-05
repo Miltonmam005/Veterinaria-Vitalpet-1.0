@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { Container, Row, Col, Form, Button, Card, Alert, Spinner } from "react-bootstrap";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from "react-icons/fa";
-import { enviarMensaje } from "../../helpers/queries";
+// import { enviarMensaje } from "../../helpers/queries";
 import Swal from "sweetalert2";
 
 const Contacto = () => {

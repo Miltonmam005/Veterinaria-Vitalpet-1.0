@@ -4,7 +4,6 @@ import { useForm } from "react-hook-form";
 import { registro } from "../../helpers/queries.js";
 import Swal from "sweetalert2";
 import { useNavigate } from "react-router";
-import WhatsAppButton from "./categorias/funcion/WhatsAppButton.jsx";
 
 const Registro = () => {
   const [mostrarPassword, setMostrarPassword] = useState(false);

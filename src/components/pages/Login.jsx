@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Form } from "react-bootstrap"; 
 import Swal from "sweetalert2";
-import icono from "..img/icono-veterinaria.png";
+import icono from "../img/icono-veterinaria.png"; 
 import { Link, useNavigate } from "react-router";
 import { login } from "../../helpers/queries";
 
-const Login = ({ setUsuarioAdmin, setestadoAdmin }) => {
+const Login = ({ setUsuarioAdmin }) => { 
   const {
     register,
     handleSubmit,

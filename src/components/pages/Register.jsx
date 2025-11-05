@@ -7,6 +7,44 @@ import Swal from "sweetalert2";
 import { crearUsuario } from "../../helpers/queries";
 
 const Register = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    watch,
+    reset,
+  } = useForm();
+
+  const crearCuenta = async (datos) => {
+    try {
+      const respuesta = await crearUsuario(datos);
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: "¡Cuenta creada!",
+          text: "Tu cuenta fue creada correctamente",
+          icon: "success",
+          confirmButtonColor: "#198754",
+        });
+        reset();
+      } else {
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo crear la cuenta",
+          icon: "error",
+          confirmButtonColor: "#dc3545",
+        });
+      }
+    } catch (error) {
+      console.error(error);
+      Swal.fire({
+        title: "Error",
+        text: "Ocurrió un error al crear la cuenta",
+        icon: "error",
+        confirmButtonColor: "#dc3545",
+      });
+    }
+  };
+
   return (
     <div className="login-wrapper">
       <Container fluid className="register-container">

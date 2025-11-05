@@ -1,4 +1,6 @@
+ correccion
 import React, { useState } from "react";
+import "../Styles/contacto.css";
 import { useForm } from "react-hook-form";
 import { Container, Row, Col, Form, Button, Card, Alert, Spinner } from "react-bootstrap";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaWhatsapp } from "react-icons/fa";

@@ -1,3 +1,4 @@
+
 const API_PRODUCTOS = import.meta.env.VITE_API_PRODUCTOS;
 const API_USUARIOS = import.meta.env.VITE_API_USUARIOS;
 const API_TURNOS = import.meta.env.VITE_API_TURNOS;
@@ -115,6 +116,12 @@ export const destacarProducto = async (id) => {
 export const login = async (datosUsuario) => {
   try {
     const respuesta = await fetch(`${API_USUARIOS}/login`, {
+const urlUsuarios = import.meta.env.VITE_API_USUARIOS;
+const urlMensajes = import.meta.env.VITE_API_MENSAJES;
+
+export const login = async (datosUsuario) => {
+  try {
+    const respuesta = await fetch(urlUsuarios + "/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -131,6 +138,13 @@ export const login = async (datosUsuario) => {
 export const registro = async (nuevoUsuario) => {
   try {
     const respuesta = await fetch(API_USUARIOS, {
+    console.error(error);
+    return null;
+  }
+};
+export const crearUsuario = async (usuarioNuevo) => {
+  try {
+    const respuesta = await fetch(urlUsuarios, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -183,6 +197,11 @@ export const editarUsuario = async (usuarioEditado, id) => {
     return respuesta;
   } catch (error) {
     console.error("Error editando usuario:", error);
+      body: JSON.stringify(usuarioNuevo),
+    });
+    return respuesta;
+  } catch (error) {
+    console.error(error);
     return null;
   }
 };
@@ -401,6 +420,9 @@ export const leerPacientesPaginados = async (page = 1, limit = 10, search = "") 
 export const enviarMensajeContacto = async (mensaje) => {
   try {
     const respuesta = await fetch(`${import.meta.env.VITE_API_CONTACTO || API_USUARIOS}/contacto`, {
+export const enviarMensaje = async (mensaje) => {
+  try {
+    const respuesta = await fetch(urlMensajes, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -410,6 +432,7 @@ export const enviarMensajeContacto = async (mensaje) => {
     return respuesta;
   } catch (error) {
     console.error("Error enviando mensaje de contacto:", error);
+    console.error("Error enviando mensaje:", error);
     return null;
   }
 };
@@ -443,6 +466,15 @@ export const obtenerPedidosUsuario = async () => {
     return respuesta;
   } catch (error) {
     console.error("Error obteniendo pedidos:", error);
+    return null;
+  }
+};
+export const obtenerMensajes = async () => {
+  try {
+    const respuesta = await fetch(urlMensajes);
+    return respuesta;
+  } catch (error) {
+    console.error("Error obteniendo mensajes:", error);
     return null;
   }
 };

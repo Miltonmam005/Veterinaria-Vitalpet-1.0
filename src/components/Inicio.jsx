@@ -17,10 +17,11 @@ const Inicio = () => {
             <p className="text-light">
               "Cuidamos a tus mascotas como parte de nuestra familia"
             </p>
-            <Link to="/contact" className="btn btn-success me-2">
+          
+            <Link to="/formularioplan" className="btn btn-success me-2">
               Conocer nuestros planes
             </Link>
-            <Link to="/contact" className="btn btn-warning">
+            <Link to="/turnos" className="btn btn-warning">
               Agenda tu turno
             </Link>
           </div>
@@ -136,7 +137,7 @@ const Inicio = () => {
                 </div>
               ))}
               <div className="d-flex justify-content-center">
-                <Link to="/administrador" className="btn btn-success">
+                <Link to="/catalogo" className="btn btn-success">
                   Ver más Productos
                 </Link>
               </div>

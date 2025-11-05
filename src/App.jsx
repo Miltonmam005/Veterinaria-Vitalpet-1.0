@@ -14,10 +14,10 @@ import Contacto from "./components/pages/Contacto.jsx";
 import Error404 from "./components/pages/Error404.jsx";
 import Administrador from "./components/pages/Administrador.jsx";
 import AdministrarPacientes from "./components/pages/AdminPacientes.jsx";
-import AdministrarTurnos from "./components/pages/Administrador.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
 import DetalleProductos from "./components/pages/DetalleProducto.jsx";
-import ProtectorAdmin from "./components/routes/protectorAdmin.jsx";
+import ProtectorAdmin from "./components/routes/ProtectorAdmin.jsx";
+import FormularioPlan from "./components/pages/FormularioPlan.jsx";
 import "./index.css";
 
 function App() {
@@ -46,9 +46,12 @@ function App() {
           path="/login"
           element={<Login setUsuarioAdmin={setUsuarioAdmin} />}
         />
+        <Route path="/ItemProducto" element={<Catalogo />} />
+        <Route path="/AdministrarTurnos" element={<Turnos />} />
         <Route path="/registro" element={<Register />} />
         <Route path="/contact" element={<Contacto />} />
 
+        {/* Rutas protegidas */}
         <Route
           path="/administrador"
           element={
@@ -61,7 +64,11 @@ function App() {
           path="/administrador/crear"
           element={
             <ProtectorAdmin usuarioAdmin={usuarioAdmin}>
-              <FormularioProducto titulo="Agregar Producto" />
+              <FormularioProducto
+                titulo="Agregar Producto"
+                productos={productos}
+                setProductos={setProductos}
+              />
             </ProtectorAdmin>
           }
         />
@@ -73,23 +80,16 @@ function App() {
             </ProtectorAdmin>
           }
         />
+
+        {/* Otras rutas */}
         <Route
           path="/administrar-pacientes"
           element={<AdministrarPacientes />}
         />
-
-        <Route path="/administrador" element={<Administrador />} />
-        <Route
-          path="/administrar-pacientes"
-          element={<AdministrarPacientes />}
-        />
-
-        <Route path="/administrar-turnos" element={<AdministrarTurnos />} />
         <Route path="/detalle-producto/:id" element={<DetalleProductos />} />
-        <Route
-          path="/formularioplan"
-          element={<FormularioPlan></FormularioPlan>}
-        ></Route>
+        <Route path="/formularioplan" element={<FormularioPlan />} />
+
+        {/* Ruta 404 */}
         <Route path="*" element={<Error404 />} />
       </Routes>
       <Footer />

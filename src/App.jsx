@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router";
 import { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -17,7 +17,7 @@ import AdministrarPacientes from "./components/pages/AdminPacientes.jsx";
 import FormularioProducto from "./components/pages/FormularioProducto.jsx";
 import DetalleProductos from "./components/pages/DetalleProducto.jsx";
 import ProtectorAdmin from "./components/routes/protectorAdmin.jsx";
-import FormularioPlan from "./components/pages/FormularioPlan.jsx"; // ← AGREGADO
+import FormularioPlan from "./components/pages/FormularioPlan.jsx"; 
 import "./index.css";
 
 function App() {

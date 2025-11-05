@@ -2,7 +2,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router";
 import "../../index.css";
-import logo from "/LogoVet.png";
 
 const Footer = () => {
   return (
@@ -20,7 +19,7 @@ const Footer = () => {
             <img
               className="d-inline-block m-lg-1 align-top logoMarca"
               alt="logo Veterinaria"
-              src={logo}
+              src="/LogoVet.png"
               width="50"
               height="50"
             />
@@ -29,34 +28,34 @@ const Footer = () => {
             <h5 className="text-uppercase titulofoter fw-bold mb-3">
               Enlaces Rápidos
             </h5>
-            <ul className="list-unstyled ">
-              <li className="textocolor">
+            <ul className="list-unstyled">
+              <li>
                 <Link
-                  to={"/error404"}
+                  to={"/contact"} 
                   className="text-decoration-none text-white nav-link"
                 >
                   Contáctanos
                 </Link>
               </li>
-              <li className="textocolor">
+              <li>
                 <Link
-                  to={"/error404"}
+                  to={"/sobreNosotros"} 
                   className="text-decoration-none text-white nav-link"
                 >
                   Acerca de nosotros
                 </Link>
               </li>
-              <li className="textocolor">
+              <li>
                 <Link
-                  to={"/error404"}
+                  to={"/productos"} 
                   className="text-decoration-none text-white nav-link"
                 >
                   Nuestros Productos
                 </Link>
               </li>
-              <li className="textocolor">
+              <li>
                 <Link
-                  to={"/error404"}
+                  to={"/login"} 
                   className="text-decoration-none text-white nav-link"
                 >
                   Área de Clientes
@@ -68,7 +67,7 @@ const Footer = () => {
             <h5 className="text-uppercase titulofoter fw-bold mb-3">
               Síguenos
             </h5>
-            <div className="d-flex justify-content-center justify-content-md-start ">
+            <div className="d-flex justify-content-center justify-content-md-start">
               <a
                 href="https://facebook.com/VitalPet"
                 target="_blank"

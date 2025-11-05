@@ -1,5 +1,4 @@
-import React from 'react';
-import milton from "../assets/milton.jpg";
+import milton from "../../assets/milton.jpeg";
 
 const SobreNosotros = () => {
     return (
@@ -61,16 +60,16 @@ const SobreNosotros = () => {
           </div>
         </div>
 
-        {/* Integrantes */}
         <div className="row text-center d-flex justify-content-center mt-5">
-          <h3 className="mb-4">Nuestros integrantes</h3>
+          <h3 className="mb-4">Integrante</h3>
           <div className="col-md-4 mb-3">
             <div className="card shadow-sm h-100">
               <div className="card-body bg-body-secondary">
-                <Image
+                <img
                   src={milton}
                   className="w-100 mb-2 img-circular-sobreNosotros"
                   alt="Milton Ramón Mamani"
+                  style={{ borderRadius: '50%', objectFit: 'cover', height: '200px' }}
                 />
                 <h2>Milton Ramón Mamani</h2>
                 <p className="card-text">

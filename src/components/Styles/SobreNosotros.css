@@ -1,0 +1,171 @@
+/* SobreNosotros.css */
+.sobre-hero {
+  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+}
+
+.sobre-hero-img {
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sobre-hero-img:hover {
+  transform: scale(1.02);
+}
+
+.sobre-card {
+  transition: all 0.3s ease;
+}
+
+.sobre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+.sobre-valores {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+.sobre-valor-card {
+  transition: all 0.3s ease;
+}
+
+.sobre-valor-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15) !important;
+}
+
+.sobre-desarrollador {
+  background: #fff;
+}
+
+.sobre-dev-card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.sobre-dev-profile {
+  position: relative;
+}
+
+.sobre-dev-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.sobre-dev-img:hover {
+  transform: scale(1.05);
+}
+
+.sobre-dev-content {
+  background: #fff;
+}
+
+.sobre-contact-btn {
+  transition: all 0.3s ease;
+}
+
+.sobre-contact-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(25, 135, 84, 0.3);
+}
+
+.sobre-cta {
+  background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+}
+
+.sobre-cta-btn {
+  transition: all 0.3s ease;
+}
+
+.sobre-cta-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sobre-hero .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .sobre-valores .display-5 {
+    font-size: 2rem;
+  }
+  
+  .sobre-desarrollador .display-5 {
+    font-size: 2rem;
+  }
+  
+  .sobre-dev-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .sobre-cta .row {
+    text-align: center;
+  }
+  
+  .sobre-cta .text-end {
+    text-align: center !important;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sobre-hero {
+    padding: 2rem 0 !important;
+  }
+  
+  .sobre-hero .display-4 {
+    font-size: 2rem;
+  }
+  
+  .sobre-dev-profile {
+    padding: 2rem 1rem !important;
+  }
+}
+
+/* Animaciones suaves */
+.sobre-card,
+.sobre-valor-card,
+.sobre-dev-card {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Efectos de hover mejorados */
+.sobre-valor-card:hover i {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.sobre-dev-card:hover {
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .sobre-card,
+  .sobre-valor-card,
+  .sobre-dev-card,
+  .sobre-hero-img,
+  .sobre-dev-img,
+  .sobre-contact-btn,
+  .sobre-cta-btn {
+    transition: none !important;
+    animation: none !important;
+  }
+}

@@ -1,0 +1,455 @@
+/* Administrador.css */
+.admin-header {
+  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+.admin-header h3 {
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.admin-container {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.admin-accordion {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.admin-accordion-item {
+  border: none;
+  border-radius: 12px !important;
+  overflow: hidden;
+}
+
+.admin-accordion-header {
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  border: none;
+  padding: 1.25rem 1.5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.admin-accordion-header:not(.collapsed) {
+  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+  color: white;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+.admin-accordion-header:hover {
+  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.admin-accordion-body {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0 0 12px 12px;
+}
+
+.admin-toolbar {
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.admin-search-form {
+  flex: 1;
+  max-width: 400px;
+}
+
+.admin-search-input {
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+}
+
+.admin-search-input:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.admin-clear-search {
+  color: #6c757d;
+  transition: color 0.3s ease;
+}
+
+.admin-clear-search:hover {
+  color: #dc3545;
+}
+
+.admin-action-buttons {
+  flex-shrink: 0;
+}
+
+.admin-add-btn {
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+.admin-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 135, 84, 0.4);
+}
+
+.admin-quick-add-btn {
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.3);
+}
+
+.admin-quick-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.4);
+}
+
+.admin-table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.admin-table-header {
+  background: linear-gradient(135deg, #198754 0%, #146c43 100%);
+}
+
+.admin-table-header th {
+  border: none;
+  padding: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.admin-th-number {
+  width: 60px;
+}
+
+.admin-th-name {
+  width: 25%;
+}
+
+.admin-th-type {
+  width: 12%;
+}
+
+.admin-th-category {
+  width: 15%;
+}
+
+.admin-th-price {
+  width: 10%;
+}
+
+.admin-th-stock {
+  width: 10%;
+}
+
+.admin-th-featured {
+  width: 10%;
+}
+
+.admin-th-actions {
+  width: 18%;
+}
+
+.admin-table-body tr {
+  transition: all 0.3s ease;
+}
+
+.admin-table-body tr:hover {
+  background-color: #f8f9fa;
+  transform: scale(1.01);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-loading-cell {
+  background: #f8f9fa;
+}
+
+.admin-spinner {
+  width: 2rem;
+  height: 2rem;
+  border-width: 0.2em;
+}
+
+.admin-empty-cell {
+  background: #f8f9fa;
+  font-style: italic;
+}
+
+.admin-empty-cell i {
+  font-size: 1.5rem;
+  opacity: 0.5;
+}
+
+.admin-pagination {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.admin-pagination-btn {
+  border-radius: 20px;
+  padding: 0.5rem 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid #198754;
+}
+
+.admin-pagination-btn:hover:not(:disabled) {
+  background-color: #198754;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+.admin-pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.admin-pagination-info {
+  font-weight: 600;
+  color: #2c3e50;
+  min-width: 150px;
+  text-align: center;
+}
+
+/* Modal Styles */
+.admin-modal .modal-content {
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.admin-modal-header {
+  border-radius: 15px 15px 0 0;
+  padding: 1.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-modal-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.admin-modal-body {
+  padding: 2rem;
+}
+
+.admin-modal-form {
+  padding: 0.5rem;
+}
+
+.admin-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.admin-form-label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.admin-form-control {
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.admin-form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+  transform: translateY(-1px);
+}
+
+.admin-form-control.is-invalid {
+  border-color: #dc3545;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.15);
+}
+
+.admin-form-feedback {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.admin-modal-actions {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.admin-modal-submit {
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+.admin-modal-submit:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(25, 135, 84, 0.4);
+}
+
+.admin-modal-cancel {
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.admin-modal-cancel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(108, 117, 125, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-toolbar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .admin-search-form {
+    max-width: 100%;
+    width: 100%;
+  }
+  
+  .admin-action-buttons {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .admin-add-btn,
+  .admin-quick-add-btn {
+    flex: 1;
+    margin: 0 0.25rem;
+  }
+  
+  .admin-table {
+    font-size: 0.85rem;
+  }
+  
+  .admin-table-header th {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  
+  .admin-pagination {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  .admin-pagination-info {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .admin-accordion-body {
+    padding: 1rem;
+  }
+  
+  .admin-modal-body {
+    padding: 1.5rem;
+  }
+  
+  .admin-modal-actions {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .admin-modal-submit,
+  .admin-modal-cancel {
+    width: 100%;
+  }
+}
+
+/* Accessibility Improvements */
+@media (prefers-reduced-motion: reduce) {
+  .admin-accordion-header,
+  .admin-add-btn,
+  .admin-quick-add-btn,
+  .admin-table-body tr,
+  .admin-pagination-btn,
+  .admin-form-control,
+  .admin-modal-submit,
+  .admin-modal-cancel {
+    transition: none !important;
+    transform: none !important;
+  }
+  
+  .admin-container {
+    animation: none;
+  }
+}
+
+/* Focus states for accessibility */
+.admin-add-btn:focus,
+.admin-quick-add-btn:focus,
+.admin-pagination-btn:focus,
+.admin-form-control:focus,
+.admin-modal-submit:focus,
+.admin-modal-cancel:focus {
+  outline: 2px solid #198754;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  .admin-toolbar,
+  .admin-action-buttons,
+  .admin-th-actions,
+  .admin-pagination {
+    display: none !important;
+  }
+  
+  .admin-table {
+    box-shadow: none !important;
+  }
+}
